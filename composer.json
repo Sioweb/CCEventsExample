@@ -1,0 +1,34 @@
+{
+    "name": "sioweb/cceventsexample",
+    "type": "contao-bundle",
+    "description": "Beispiel-Externsion für die Benutzung von CCEvent",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Sascha Weidner",
+            "homepage": "https://www.sioweb.de"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "sioweb/ccevent": "*"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sioweb\\CCEventsExample\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Sioweb\\CCEventsExample\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "package-scripts": [
+            "Sioweb\\CCEventsExample\\Composer\\Git::init --repository=https://github.com/Sioweb/CCEventsExample",
+            "Sioweb\\CCEventsExample\\Composer\\Git::init --repository=https://github.com/Sioweb/CCEventsExample --xyz=test"
+        ]
+    }
+}

@@ -27,8 +27,8 @@
     },
     "scripts": {
         "package-scripts": [
-            "Sioweb\\CCEventsExample\\Composer\\Git::init --repository=https://github.com/Sioweb/CCEventsExample",
-            "Sioweb\\CCEventsExample\\Composer\\Git::init --repository=https://github.com/Sioweb/CCEventsExample --xyz=test"
+            "Sioweb\\CCEventsExample\\Composer\\TestComposerScript::init --repository=https://github.com/Sioweb/CCEventsExample",
+            "Sioweb\\CCEventsExample\\Composer\\TestComposerScript::init --repository=https://github.com/Sioweb/CCEventsExample --xyz=test"
         ]
     }
 }
